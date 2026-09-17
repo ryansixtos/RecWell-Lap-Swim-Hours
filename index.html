@@ -3,35 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>RecWell Lap Swim Hours</title>
 
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: #ffffff;
       width: 100%;
       min-height: 100%;
+      background: white;
       font-family: Calibri, Arial, sans-serif;
     }
 
     .header {
+      width: 100%;
       text-align: center;
-      margin-bottom: 15px;
+      margin: 0 0 20px 0;
       font-size: 40px;
       font-weight: bold;
       color: #002676;
     }
 
-    /* Center the LiveWhale widget and table */
+    /* Center the entire LiveWhale widget */
     .lwcw {
-      width: 100%;
-      text-align: center;
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    /* Center anything LiveWhale puts inside the widget */
+    .lwcw > * {
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
 
     .lwcw table {
       margin-left: auto !important;
       margin-right: auto !important;
+      float: none !important;
+    }
+
+    .lwcw table,
+    .lwcw tbody,
+    .lwcw tr,
+    .lwcw td,
+    .lwcw th {
+      text-align: center !important;
     }
   </style>
 </head>
