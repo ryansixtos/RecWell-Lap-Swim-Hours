@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RecWell Lap Swim Hours</title>
+<title>RecWell Lap Swim Hours</title>
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-      background: white;
-      font-family: Calibri, Arial, sans-serif;
-    }
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #ffffff;
+}
 
-    .header {
-      width: 100%;
-      text-align: center;
-      margin: 0 0 20px 0;
-      font-size: 40px;
-      font-weight: bold;
-      color: #002676;
-    }
+.header {
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #002676;
+    margin-bottom: 20px;
+}
 
-    /* Center the entire LiveWhale widget */
-    .lwcw {
-      width: 100% !important;
-      display: flex !important;
-      justify-content: center !important;
-      text-align: center !important;
-    }
+/* Center the widget itself */
+.widget-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    /* Center anything LiveWhale puts inside the widget */
-    .lwcw > * {
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
+/* Force the LiveWhale content to center */
+.widget-container .lwcw {
+    display: inline-block !important;
+    width: auto !important;
+    margin: 0 auto !important;
+}
 
-    .lwcw table {
-      margin-left: auto !important;
-      margin-right: auto !important;
-      float: none !important;
-    }
+/* Override common LiveWhale positioning */
+.widget-container .lwcw table {
+    margin: 0 auto !important;
+    float: none !important;
+    position: static !important;
+}
+</style>
 
-    .lwcw table,
-    .lwcw tbody,
-    .lwcw tr,
-    .lwcw td,
-    .lwcw th {
-      text-align: center !important;
-    }
-  </style>
 </head>
 
 <body>
 
-  <div class="header">
+<div class="header">
     RecWell Lap Swim Hours
-  </div>
+</div>
 
-  <div class="lwcw" data-options="id=15&format=html&tag=Open Rec Lap Swim"></div>
+<div class="widget-container">
+    <div class="lwcw"
+         data-options="id=15&format=html&tag=Open Rec Lap Swim">
+    </div>
+</div>
 
-  <script
+<script
     type="text/javascript"
     id="lw_lwcw"
     src="https://events.berkeley.edu/livewhale/theme/core/scripts/lwcw.js">
-  </script>
+</script>
 
 </body>
 </html>
