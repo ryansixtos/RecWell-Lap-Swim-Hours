@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RecWell Lap Swim Hours</title>
+
   <style>
     html, body {
       margin: 0;
@@ -11,24 +12,43 @@
       background: #ffffff;
       width: 100%;
       min-height: 100%;
+      font-family: Calibri, Arial, sans-serif;
     }
+
     .header {
       text-align: center;
       margin-bottom: 15px;
-      font-family: Calibri, Arial, sans-serif;
       font-size: 40px;
       font-weight: bold;
       color: #002676;
     }
+
+    /* Center the LiveWhale widget and table */
+    .lwcw {
+      width: 100%;
+      text-align: center;
+    }
+
+    .lwcw table {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
   </style>
 </head>
+
 <body>
-  <div class="header">RecWell Lap Swim Hours</div>
+
+  <div class="header">
+    RecWell Lap Swim Hours
+  </div>
 
   <div class="lwcw" data-options="id=15&format=html&tag=Open Rec Lap Swim"></div>
 
-  <script type="text/javascript"
+  <script
+    type="text/javascript"
     id="lw_lwcw"
-    src="https://events.berkeley.edu/livewhale/theme/core/scripts/lwcw.js"></script>
+    src="https://events.berkeley.edu/livewhale/theme/core/scripts/lwcw.js">
+  </script>
+
 </body>
 </html>
